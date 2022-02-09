@@ -17,7 +17,7 @@ Full Name is Jamal Ahmad Khan
 using namespace std;
 
 void main() {
-	char first_name[10], middle_name[10], last_name[10], full_name[30] = ""; // = "" is used to initialize the array and remove garbage datae
+	char first_name[10], middle_name[10], last_name[10], full_name[30] = ""; // = "" is used to initialize the array and remove garbage data
 	cout << "Enter Your First Name: ";
 	cin >> first_name;
 	cout << "Enter Your Middle Name: ";
