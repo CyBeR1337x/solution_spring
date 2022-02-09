@@ -16,7 +16,8 @@ void main() {
 		cout << "Enter your choice: ";
 		cin >> state;
 
-		if (state == '1') {
+		switch (state) {
+		case '1':
 			displaySubMenu();
 			cout << "Enter Your Choice: ";
 			cin >> state;
@@ -48,10 +49,8 @@ void main() {
 				printLine();
 				goto MAIN_MENU;
 			}
-			else if (state == 'E' || state == 'e')
-				break;
-		}
-		else if (state == '2') {
+			break;
+		case '2':
 			displaySubMenu();
 
 			cout << "Enter Your Choice: ";
@@ -85,10 +84,10 @@ void main() {
 				printLine();
 				goto MAIN_MENU;
 			}
-			else if (state == 'E' || state == 'e')
-				break;
-		}
-		else if (state == '3') {
+
+			break;
+
+		case '3':
 			displaySubMenu();
 
 			cout << "Enter Your Choice: ";
@@ -119,16 +118,10 @@ void main() {
 				printLine();
 				goto MAIN_MENU;
 			}
-			else if (state == 'E' || state == 'e')
-				break;
-
 		}
-		else if (state == 'E' || state == 'e')
-			break;
 
 
-
-	} while (true);
+	} while (state != 'E');
 }
 
 void printLine() {
