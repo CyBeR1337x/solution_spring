@@ -34,7 +34,7 @@ void main() {
 	float balance_sum;
 
 	for (int i = 0; i < 10; i++)
-		balance_sum = accounts[i].balance;
+		balance_sum += accounts[i].balance;
 
 	float avg_balance = balance_sum / 10;
 	cout << "Average balance: " << avg_balance << endl;
